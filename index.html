@@ -14,60 +14,50 @@
 
 <body>
 
-    <nav class="menu">
+    <!-- <nav class="menu">
         <a href="#">Home</a>
         <a href="#">Juros 1</a>
         <a href="#">Juros 2</a>
         <a href="#">Juros 3</a>
-    </nav>
+    </nav> -->
 
-    <div class="main-body">
-        <div class="row">
-            <div class="col container" >
-                <div class="form">
-                    <h1 class="text-purple">Juros Simples</h1>
-                    <h2>explicação</h2>
-                    <form>
-                        <label for="fcapital">Capital emprestado:</label>
-                        <input type="number" id="fcapital" name="fcapital"><br>
-                        <label for="ftaxa">Taxa de juros:</label><br>
-                        <input type="number" id="ftaxa" name="ftaxa"><br>
-                        <label for="fperiodo">Período:</label><br>
-                        <input type="number" id="fperiodo" name="fperiodo">
-                      </form>
-                    <button id="btnJSimples" class="btnForm" onclick="calcularJurosSimples()">Calcular</button>
-                </div>
+    <header>
+        <h1>Calculadora de Juros</h1>
+    </header>
+
+    <div class="row main-body">
+        <div class="col container" >
+            <div id="JSimples" class="form">
+                <h1>Juros Simples</h1>
+                <h2>explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação</h2>
+                <form action="">
+                    <label for="fcapital">Capital emprestado:</label><br>
+                    <input type="number" id="fcapital" name="fcapital" placeholder="Digite o valor do empréstimo"><br>
+                    <label for="ftaxa">Taxa de juros:</label><br>
+                    <input type="number" id="ftaxa" name="ftaxa" placeholder="Digite a taxa de juros"><br>
+                    <label for="fperiodo">Período:</label><br>
+                    <input type="number" id="fperiodo" name="fperiodo" placeholder="Digite o período do empréstimo">
+                </form>
+                <button id="btnJSimples" class="btnForm" onclick="calcularJurosSimples()">Calcular</button>
             </div>
-            <div class="col container">
-                <div class="form">
-                    <h1 class="text-purple">Juros Composto</h1>
-                    <h2>explicação</h2>
-                    <form action="">
-                        <label for="fcapital">Capital emprestado:</label>
-                        <input type="number" id="fcapital" placeholder="Digite o valor do empréstimo"><br>
-                        <label for="ftaxa">Taxa de juros:</label><br>
-                        <input type="number" id="ftaxa"><br>
-                        <label for="fperiodo">Período:</label><br>
-                        <input type="number" id="fperiodo">
-                    </form>
-                    <button id="btnJComposto" class="btnForm" onclick="calcularJurosComposto()">Calcular</button>
-                </div>
+        </div>
+        <div class="col container">
+            <div id="JComposto" class="form">
+                <h1>Juros Composto</h1>
+                <h2>explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação</h2>
+                <form action="">
+                    <label for="fcapital">Capital emprestado:</label><br>
+                    <input type="number" id="fcapital" placeholder="Digite o valor do empréstimo"><br>
+                    <label for="ftaxa">Taxa de juros:</label><br>
+                    <input type="number" id="ftaxa"><br>
+                    <label for="fperiodo">Período:</label><br>
+                    <input type="number" id="fperiodo">
+                </form>
+                <button id="btnJComposto" class="btnForm" onclick="calcularJurosComposto()">Calcular</button>
             </div>
-            <div class="col container">
-                <div class="form">
-                    <h1 class="text-purple">Juros 3</h1>
-                    <h2>explicação</h2>
-                    <form>
-                        <label for="fcapital">Capital emprestado:</label>
-                        <input type="number" id="fcapital" name="fcapital"><br>
-                        <label for="ftaxa">Taxa de juros:</label><br>
-                        <input type="number" id="ftaxa" name="ftaxa"><br>
-                        <label for="fperiodo">Período:</label><br>
-                        <input type="number" id="fperiodo" name="fperiodo">
-                    </form>
-                    <button class="btnForm" onclick="calcularJuros3()">Calcular</button>
-                </div>
-            </div>
+        </div>
+        <div class="col container">
+           
 
         </div>
     </div>
