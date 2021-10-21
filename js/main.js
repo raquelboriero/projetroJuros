@@ -18,7 +18,7 @@ function calcularJurosComposto() {
   var taxa = (document.getElementById("ftaxa")).value;
   var periodo = (document.getElementById("fperiodo")).value;
   var base = parseFloat(1 + taxa);
-  var montanteAPagar = Math.pow(base, periodo);
+  var montanteAPagar = capital*(Math.pow(base, periodo));
   console.log(montanteAPagar);
  
   
