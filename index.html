@@ -29,22 +29,33 @@
         <div class="col container" >
             <div id="JSimples" class="form">
                 <h1>Juros Simples</h1>
-                <h2>explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação</h2>
+                <p>O juros simples é calculado com base <br>
+                     em um valor fixado chamado de capital inicial. <br>
+                    Trata-se de uma porcentagem do capital inicial <br>
+                    aplicada durante determinado tempo. <br>
+                    A principal característica do juros simples<br>
+                     é que o valor não se altera no decorrer dos meses.</p>
                 <form action="">
                     <label for="fcapital">Capital emprestado:</label><br>
                     <input type="number" id="fcapital" name="fcapital" placeholder="Digite o valor do empréstimo"><br>
-                    <label for="ftaxa">Taxa de juros:</label><br>
-                    <input type="number" id="ftaxa" name="ftaxa" placeholder="Digite a taxa de juros"><br>
-                    <label for="fperiodo">Período:</label><br>
+                    <label for="ftaxa">Taxa de juros anual:</label><br>
+                    <input type="number" id="ftaxa" name="ftaxa" placeholder="Digite a taxa de juros anual"><br>
+                    <label for="fperiodo">Período em anos:</label><br>
                     <input type="number" id="fperiodo" name="fperiodo" placeholder="Digite o período do empréstimo">
                 </form>
                 <button id="btnJSimples" class="btnForm" onclick="calcularJurosSimples()">Calcular</button>
+                <div id="resultJSimples"></div>
             </div>
         </div>
         <div class="col container">
             <div id="JComposto" class="form">
                 <h1>Juros Composto</h1>
-                <h2>explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação explicação</h2>
+                <p>O juros simples é calculado com base <br>
+                    em um valor fixado chamado de capital inicial. <br>
+                   Trata-se de uma porcentagem do capital inicial <br>
+                   aplicada durante determinado tempo. <br>
+                   A principal característica do juros simples<br>
+                    é que o valor não se altera no decorrer dos meses.</p>
                 <form action="">
                     <label for="fcapital">Capital emprestado:</label><br>
                     <input type="number" id="fcapital" placeholder="Digite o valor do empréstimo"><br>
@@ -54,6 +65,7 @@
                     <input type="number" id="fperiodo">
                 </form>
                 <button id="btnJComposto" class="btnForm" onclick="calcularJurosComposto()">Calcular</button>
+                <div id="resultJComposto"></div>
             </div>
         </div>
         <div class="col container">
